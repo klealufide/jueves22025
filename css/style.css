@@ -55,3 +55,24 @@ h3+p {
 .hermano ~ p { /* todos los hermanos */
      color: rgb(245, 165, 3);
 }
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color:brown;
+}
+
+.card-title {
+    color: purple;
+}
+
+.card-link {
+    font-size: 10px;
+}
+
+.container-fluid {
+    background-color: blue;
+    height: 10px;
+}
+
+.col {
+    background-color: red;
+}
