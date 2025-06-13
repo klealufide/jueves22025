@@ -86,7 +86,7 @@ for (let i = 0; i < 10; i++) {
 
 
 for (let i = 0; i <= 10; i++) {
-    console.log("Tabla 4 * "+i +" = "+(4*i));
+    console.log("Tabla 4 * " + i + " = " + (4 * i));
 }
 
 let listaFrutas = [
@@ -99,21 +99,37 @@ for (let i = 0; i < listaFrutas.length; i++) {
     console.log(listaFrutas[i]);
 }
 
-for(x in listaFrutas){
+for (x in listaFrutas) {
     console.log(listaFrutas[x]);
 }
 
 edad = 49;
 
 
-while(edad < 50){
-        edad +=1;
-    console.log("WHILE"+edad);
+while (edad < 50) {
+    edad += 1;
+    console.log("WHILE" + edad);
 }
 // al menos 1 vez
 
 
 do {
-    edad +=1;
-    console.log("DOWHILE"+edad);
-} while(edad <  50)
+    edad += 1;
+    console.log("DOWHILE" + edad);
+} while (edad < 50)
+
+
+function sumar(a,b){
+    return a+b;
+}
+
+let resultado = sumar(4,5);
+console.log(resultado);
+
+console.log(sumar(3,4));
+
+function saludar(nombre){
+    console.log("Hola!! "+nombre);
+}
+
+saludar("karol");
