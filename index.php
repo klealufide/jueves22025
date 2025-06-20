@@ -54,17 +54,17 @@
         echo "Es menor de edad pero no es estudiante" . $espacio;
     }
 
-    if(!$esEstudiante){
+    if (!$esEstudiante) {
         echo "No es estudiante" . $espacio;
     }
-    if($esEstudiante || $edad >=  $edadMayor ){ // o
-        echo "es estudiante o mayor de edad". $espacio;
+    if ($esEstudiante || $edad >=  $edadMayor) { // o
+        echo "es estudiante o mayor de edad" . $espacio;
     }
 
-    if($esEstudiante || $edad < $edadMayor){
-        echo "No es estudiante y es menor de edad".  $espacio;
+    if ($esEstudiante || $edad < $edadMayor) {
+        echo "No es estudiante y es menor de edad" .  $espacio;
     } else {
-        echo "No entro por que ambos son false".  $espacio;
+        echo "No entro por que ambos son false" .  $espacio;
     }
 
     $semaforo = "azul";
@@ -100,6 +100,22 @@
     }
     if ($a !== $b) {
         echo "el valor o el tipo de a y b son diferentes" . $espacio;
+    }
+
+    $contador = 0;
+
+    while ($contador < 5) {
+        $contador++;
+        echo $contador . $espacio;
+    }
+
+    do {
+        $contador++;
+        echo $contador . $espacio;
+    } while ($contador < 5);
+
+    for($i = 0; $i <= 10; $i++){
+        echo $i.$espacio;
     }
     ?>
 </body>
