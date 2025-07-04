@@ -217,7 +217,20 @@
 
     fclose($archivo);
 
+    // iniciar sesion y destruir sesion
+
+    session_start();
+    print_r($_SESSION);
+    $_SESSION["username"] = "kleal";
+    $_SESSION["admin"] = "admin";
+
+    print_r($_SESSION);
+
+    
+
     ?>
+
+    <a href="sesion.php">Sesion</a>
 </body>
 
 </html>
