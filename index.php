@@ -194,9 +194,29 @@
 
 
     echo calculadora(10, 5, '+');
+    echo $espacio;
     echo calculadora(10, 5, '-');
+    echo $espacio;
     echo calculadora(10, 5, '*');
+    echo $espacio;
     echo calculadora(10, 5, '/');
+
+    echo $espacio;
+    /*
+    $archivo = fopen("archivo.txt", "w");
+    $texto = "Hola mundo!";
+    fwrite($archivo, $texto);
+    fclose($archivo);
+    */
+
+    $archivo = fopen("archivo.txt","r");
+
+    while(!feof($archivo)){
+        echo fgets($archivo).$espacio;
+    }
+
+    fclose($archivo);
+
     ?>
 </body>
 
