@@ -7,6 +7,8 @@
     <h1>Unidad 4 - PHP</h1>
     <?php
     $espacio = "<br>";
+    /*
+
     echo "<h3> Hola!</h3>";
 
     $nombre = "Karol";
@@ -117,6 +119,58 @@
     for($i = 0; $i <= 10; $i++){
         echo $i.$espacio;
     }
+    */
+    // array indexado
+
+    $listaFrutas = ["melon", "papaya", "banano"];
+    print_r($listaFrutas);
+    echo $espacio;
+    $listaFrutas = array("melon", "papaya", "banano");
+
+    // print_r esto nos permite ver la informacion con la que cuenta el array
+    print_r($listaFrutas);
+    echo $espacio;
+    echo $listaFrutas[1];
+    echo $espacio;
+
+    foreach ($listaFrutas as $index => $fruta) {
+        if ($index == 2) {
+            echo "posicion " . $index . " - " . $fruta;
+            echo $espacio;
+        }
+        if ($fruta == "banano") {
+            echo "La posicion de banano es posicion " . $index;
+            echo $espacio;
+        }
+        echo $espacio;
+    }
+
+    echo  "La posicion de banano segun la funcion es posicion " . array_search("banano", $listaFrutas);
+    echo $espacio;
+    // array asociativo
+
+    $persona = ["nombre" => "Karol", "apellido" => "Leal", "edad" => 35, "esEstudiante" => false];
+    $persona2 = ["nombre" => "Maria", "apellido" => "Mora", "edad" => 20, "esEstudiante" => true];
+    $persona3 = ["nombre" => "Felipe", "apellido" => "Fernandez", "edad" => 25, "esEstudiante" => true];
+
+    print_r($persona);
+    echo $espacio;
+    echo $persona["apellido"];
+    echo $espacio;
+    $listaEstudiantes = [$persona, $persona2, $persona3];
+
+    print_r($listaEstudiantes);
+    echo $espacio;
+    foreach ($listaEstudiantes as $estudiante) {
+        if ($estudiante["esEstudiante"]) {
+            echo $estudiante["nombre"];
+            echo $espacio;
+        }
+    }
+
+    array_push($listaEstudiantes, "6");
+    print_r($listaEstudiantes);
+    echo $espacio;
     ?>
 </body>
 
