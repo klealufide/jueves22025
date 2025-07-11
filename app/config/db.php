@@ -13,7 +13,9 @@ if ($conn->connect_error) {
 
 
 echo "Conexion OKAY<br>";
+/*
 
+UNIDAD 5
 $sql = "select * from users";
 $result = $conn->query($sql);
 
@@ -32,14 +34,14 @@ if ($conn->query($sql) === TRUE) {
 } else {
     echo "No se actualizo registros. <br>";
 }
-/*
+
 $sql = "INSERT INTO users (username, password, name, rol) VALUES ('trojas','123456','Tatiana','encargado')";
 if($conn->query($sql) === TRUE){
      echo "Registro insertado correctamente. <br>";
 } else {
      echo "No se inserto registros. <br>";
 }
-     */
+  
 
 $sql = "DELETE FROM users where id = 3";
 
@@ -48,3 +50,21 @@ if ($conn->query($sql) === TRUE) {
 } else {
     echo "No se elimino registros. <br>";
 }
+   */
+
+// hash 
+/*
+$clave = "123Queso";
+
+//$hash = password_hash($clave,PASSWORD_BCRYPT);
+
+$hash_clave_db = "$2y$10$/yGGc9O8ooFYVuT/yyFRpe8zqnixL2128ZhPAmr36B1CbgbckELXi";
+
+echo $hash;
+
+if (password_verify($clave, $hash_clave_db)) {
+    echo "clave es valida";
+} else {
+    echo "clave es incorrecta";
+}
+*/
