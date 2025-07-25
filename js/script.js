@@ -38,4 +38,28 @@ $(function () {
     $("img").on("mouseleave", function () {
         $("img").attr("src", "img/img1.jpg");
     })
+
+    $("#mostrar").on("click", function () {
+        $("#cuadrado").fadeIn(1000);
+    })
+
+    $("#ocultar").on("click", function () {
+        $("#cuadrado").fadeOut(1000);
+    })
+
+    $("#cambiarTamanno").on("click", function () {
+        $("#cuadrado").animate({
+            width: '200px',
+            height: '200px',
+            opacity: 0.5
+        })
+    })
+
+    $("#original").on("click", function () {
+        $("#cuadrado").animate({
+            width: '100px',
+            height: '100px',
+            opacity: 1  
+        })
+    })
 })
