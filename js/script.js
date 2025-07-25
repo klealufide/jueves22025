@@ -29,7 +29,7 @@ $(function () {
             $("#tarea").css("borderColor", "black");
             $("#titulo").removeClass("grupo1");
             // $("#listaTareas").append("<li>"+tarea+"</li>"); // al final dentro de la etiqueta seleccionada
-            $("#listaTareas").prepend("<li>"+tarea+"</li>"); // al inicio dentro de la etiqueta que selecciono
+            $("#listaTareas").prepend("<li>" + tarea + "</li>"); // al inicio dentro de la etiqueta que selecciono
             $("#tarea").val("");
         }
     })
@@ -48,6 +48,10 @@ $(function () {
 
     $("#ocultar").on("click", function () {
         $("#cuadrado").fadeOut(1000);
+    })
+
+    $("#toggle").on("click", function () {
+        $("#cuadrado").toggleClass("morado");
     })
 
     $("#cambiarTamanno").on("click", function () {
