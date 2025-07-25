@@ -28,9 +28,12 @@ $(function () {
         } else {
             $("#tarea").css("borderColor", "black");
             $("#titulo").removeClass("grupo1");
+            // $("#listaTareas").append("<li>"+tarea+"</li>"); // al final dentro de la etiqueta seleccionada
+            $("#listaTareas").prepend("<li>"+tarea+"</li>"); // al inicio dentro de la etiqueta que selecciono
+            $("#tarea").val("");
         }
     })
-
+    /*
     $("img").on("mouseenter", function () {
         $("img").attr("src", "img/biblioteca.jpg");
     })
@@ -38,7 +41,7 @@ $(function () {
     $("img").on("mouseleave", function () {
         $("img").attr("src", "img/img1.jpg");
     })
-
+*/
     $("#mostrar").on("click", function () {
         $("#cuadrado").fadeIn(1000);
     })
@@ -59,7 +62,7 @@ $(function () {
         $("#cuadrado").animate({
             width: '100px',
             height: '100px',
-            opacity: 1  
+            opacity: 1
         })
     })
 })
