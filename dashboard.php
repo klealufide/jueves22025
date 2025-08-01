@@ -13,12 +13,7 @@
 <body>
     <?php include("components/menu.php") ?>
     <main>
-        <h2>Iniciar sesion</h2>
-        <form id="login-form">
-            <input type="text" name="username" placeholder="Usuario" required>
-            <input type="password" name="password" placeholder="Contraseña" required>
-            <button type="submit">Entrar</button>
-        </form>
+        
     </main>
     <div id="footer-container"></div>
 </body>
